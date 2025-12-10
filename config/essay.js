@@ -1,365 +1,427 @@
-// ============================================
-// ESSAY CONFIGURATION
-// ============================================
-// This file configures your essay writing assignment.
-// The AI will generate this based on your essay topic.
-// ============================================
+// Eduqas A Level English Language - Component 1 Section B
+// Summer 2023 - Question 2: Child Language Acquisition
+// 60 marks | 1 hour recommended
 
 window.ESSAY_CONFIG = {
-  // Basic Information
-  title: "A Christmas Carol - Character Analysis Essay",
-  subject: "English Literature",
-  yearGroup: "Year 9",
+  title: "A Level English Language - Child Language Acquisition",
+  subject: "Eduqas A Level English Language",
+  yearGroup: "Year 13",
+  essayTitle: "Using this extract as a starting point, analyse and evaluate some of the ways in which children acquire language between eighteen months and four years of age.",
   
-  // Essay metadata
-  essayTitle: "How does Dickens present Scrooge's transformation in 'A Christmas Carol'?",
-  
-  // Instructions shown to students
-  instructions: "In this guided essay, you will write a structured analysis of Scrooge's character transformation. Each section will guide you through a different aspect of the essay. Take your time with each paragraph - you'll have up to three attempts to refine your writing based on AI feedback.",
-  
-  // How many revision attempts per paragraph (2-3 recommended)
+  instructions: `Read the following data carefully, then write an extended analytical response.
+
+**The Extract:**
+
+Mark: Play. Play. Play, Mummy. Mummy, come on.
+Mother: All right.
+Mark: Helen play, please? (pause) Helen still gone sleep, Mummy?
+Mother: No. Your sister's up there talking, isn't she?
+Mark: Yes. (playing with his toys) Top of the coach. Broken.
+Mother: Who broke the coach?
+Mark: Mark did.
+Mother: How?
+Mark: Out. 
+Mother: How did you break it?
+Mark: Dunno (pause) Mummy mend it.
+Mother: I can't, darling. Look the wheels have gone as well.
+Mark: Oh I want Daddy taked it to work (pause) mend it.
+Mother: Daddy did?
+Mark: Daddy take it away, take it to work. Mend it.
+
+**In your response, you must:**
+• Apply appropriate methods of language analysis, using associated terminology and coherent expression
+• Demonstrate understanding of relevant language concepts and issues
+• Consider contextual factors and language features associated with the construction of meaning
+• Provide supporting examples
+
+**Assessment Objectives:**
+• AO1: Apply appropriate methods of language analysis (20 marks)
+• AO2: Demonstrate critical understanding of concepts and issues (20 marks)
+• AO3: Analyse and evaluate contextual factors and meaning construction (20 marks)`,
+
   maxAttempts: 3,
-  
-  // Minimum word count per paragraph (0 to disable)
   minWordsPerParagraph: 80,
-  
-  // Target word count per paragraph (shown as guidance)
-  targetWordsPerParagraph: 120,
-  
-  // Teacher dashboard password
+  targetWordsPerParagraph: 150,
   teacherPassword: "teacher123",
   
-  // ============================================
-  // ESSAY STRUCTURE
-  // ============================================
-  // Each paragraph has:
-  // - id: Unique identifier
-  // - title: Short title for progress tracker
-  // - type: "introduction", "body", or "conclusion"
-  // - learningMaterial: Context and guidance for the student
-  // - writingPrompt: Specific instruction for what to write
-  // - keyPoints: Things the AI should look for when grading
-  // - exampleQuotes: Suggested quotes to use (optional)
-  // - points: How many marks this paragraph is worth
-  // ============================================
-  
   paragraphs: [
-    // ==========================================
-    // INTRODUCTION
-    // ==========================================
     {
       id: 1,
-      title: "Introduction",
+      title: "Introduction: Setting Up the Analysis",
       type: "introduction",
-      learningMaterial: `
-## Writing Your Introduction
+      learningMaterial: `## Introduction Guidance
 
-Your introduction should:
-- **Hook the reader** with an engaging opening statement about transformation or redemption
-- **Introduce the text** - mention Dickens and 'A Christmas Carol' (1843)
-- **Address the question** - show you understand what's being asked about Scrooge's transformation
-- **Outline your argument** - briefly preview the main points you'll make
+Your introduction should establish your analytical approach and demonstrate immediate engagement with the extract.
 
-### Context to Consider
-Charles Dickens wrote 'A Christmas Carol' in 1843, during the Victorian era when there was a huge divide between rich and poor. The novella was partly a social commentary on the treatment of the poor.
+### What to Include:
+- **Identify the developmental stage**: Mark appears to be in the late two-word/early telegraphic stage, suggesting he is approximately 2-3 years old
+- **Establish the key focus**: This essay explores how children acquire language between 18 months and 4 years
+- **Signal your approach**: Indicate you will analyse the extract AND bring in wider knowledge of theories and research
 
-### Key Vocabulary
-Consider using: transformation, redemption, miserly, benevolent, catalyst, moral awakening
-      `,
-      writingPrompt: "Write your introduction paragraph. Hook the reader, introduce the text and question, and briefly outline how you will argue that Dickens presents Scrooge's transformation.",
+### Key Terminology to Use:
+- **Developmental stages**: holophrastic stage, two-word stage, telegraphic stage, post-telegraphic stage
+- **Child-Directed Speech (CDS)** or "motherese/parentese"
+- **Language Acquisition Device (LAD)** - Chomsky's concept
+
+### From the Extract:
+Note how Mark uses phrases like "Play. Play." (repetition for emphasis), "Helen play, please?" (early question formation), and "Daddy taked it" (virtuous error/overgeneralisation).
+
+### Theorists to Consider Mentioning:
+- Chomsky (Nativist theory)
+- Skinner (Behaviourist theory)
+- Piaget (Cognitive theory)
+- Vygotsky/Bruner (Interactionist theory)`,
+      writingPrompt: "Introduce the topic of child language acquisition, identify Mark's approximate developmental stage from the extract, and outline the key areas you will explore in your essay.",
       keyPoints: [
-        "Engaging opening hook",
-        "Mentions Dickens and the novella by name",
-        "Clearly addresses the question about transformation",
-        "Previews the argument structure",
-        "Appropriate academic tone"
+        "Identifies Mark's developmental stage with supporting evidence from the extract",
+        "Establishes clear focus on the 18 months to 4 years period",
+        "Uses appropriate linguistic terminology from the outset",
+        "Signals the theoretical perspectives that will be explored"
+      ],
+      exampleQuotes: [
+        "Play. Play. Play, Mummy.",
+        "Helen still gone sleep, Mummy?",
+        "Daddy taked it to work"
+      ],
+      points: 8
+    },
+    {
+      id: 2,
+      title: "Analysis of the Extract: Grammatical Development",
+      type: "body",
+      learningMaterial: `## Analysing Mark's Grammar
+
+This paragraph should provide **detailed linguistic analysis** of Mark's grammatical features in the extract.
+
+### Key Grammatical Features to Identify:
+
+**1. Telegraphic Speech**
+Mark often omits function words (determiners, auxiliary verbs):
+- "Top of the coach. Broken." - missing determiner "The" and copula verb "is"
+- "Mummy mend it" - missing modal "can/will"
+
+**2. Overgeneralisation (Virtuous Errors)**
+- "Daddy **taked** it" - applying the regular past tense -ed rule to an irregular verb
+- This is crucial evidence for Chomsky's Nativist theory - Mark hasn't heard adults say "taked" so must be applying an internal rule
+
+**3. Pronoun Development**
+- Mark refers to himself in third person: "Mark did" rather than "I did"
+- This shows pronouns are still being acquired (relates to Bellugi's research)
+
+**4. Question Formation**
+- "Helen still gone sleep, Mummy?" - uses intonation and word order rather than auxiliaries
+- Early stage of interrogative development
+
+**5. Negation**
+- "Dunno" (don't know) - contracted negative form
+
+### Brown's Morphemes
+Reference Roger Brown's research on the order of morpheme acquisition - the -ing ending, plurals, possessives, and irregular past tenses are acquired before regular past tense -ed.`,
+      writingPrompt: "Analyse the grammatical features of Mark's speech in detail, identifying specific examples of telegraphic speech, overgeneralisation, and other developmental characteristics.",
+      keyPoints: [
+        "Identifies telegraphic speech with specific examples from the extract",
+        "Explains overgeneralisation ('taked') and its theoretical significance",
+        "Discusses pronoun development (third person self-reference)",
+        "Analyses question formation and negation patterns",
+        "Uses accurate grammatical terminology throughout"
+      ],
+      exampleQuotes: [
+        "Top of the coach. Broken.",
+        "Mummy mend it",
+        "Daddy taked it to work",
+        "Mark did"
+      ],
+      points: 12
+    },
+    {
+      id: 3,
+      title: "Lexical and Semantic Development",
+      type: "body",
+      learningMaterial: `## Lexical and Semantic Analysis
+
+Explore Mark's vocabulary use and meaning-making in the extract.
+
+### Lexical Features to Analyse:
+
+**1. Vocabulary Range**
+- Mark uses concrete nouns: "coach", "wheels", "work"
+- Verbs showing action and desire: "play", "mend", "take"
+- Social words: "please" - showing pragmatic awareness
+
+**2. Semantic Understanding**
+- Mark understands cause and effect: broken coach → needs mending → Daddy takes to work
+- Shows logical reasoning despite limited expression
+
+**3. Under-extension and Over-extension**
+- While not directly shown, discuss how children at this stage may:
+  - **Over-extend**: use "dog" for all four-legged animals
+  - **Under-extend**: use "car" only for the family car
+
+### Aitchison's Three Stages:
+1. **Labelling**: linking words to objects (Mark knows "coach", "wheels")
+2. **Packaging**: understanding word boundaries and categories
+3. **Network-building**: connecting words in semantic fields
+
+### Nelson's Categories of First Words:
+- Naming/nominals (most common): objects, people
+- Action words: verbs like "play", "mend"
+- Social words: "please", greetings
+- Modifiers: describing words
+
+Mark demonstrates vocabulary typical of his developmental stage with a mix of concrete nouns and action verbs.`,
+      writingPrompt: "Examine Mark's lexical choices and semantic understanding, discussing vocabulary development and how children build meaning during this developmental period.",
+      keyPoints: [
+        "Analyses Mark's vocabulary range with specific examples",
+        "Discusses semantic development and meaning construction",
+        "References relevant research (Aitchison, Nelson)",
+        "Connects lexical features to the 18 months-4 years period"
+      ],
+      exampleQuotes: [
+        "Helen play, please?",
+        "Top of the coach. Broken.",
+        "Look the wheels have gone"
       ],
       points: 10
     },
-    
-    // ==========================================
-    // BODY PARAGRAPH 1
-    // ==========================================
-    {
-      id: 2,
-      title: "Scrooge at the Start",
-      type: "body",
-      learningMaterial: `
-## Scrooge's Character at the Beginning
-
-Before exploring the transformation, you need to establish what Scrooge is like at the start of the novella.
-
-### Key Quotations
-- **"Oh! But he was a tight-fisted hand at the grindstone, Scrooge!"** - Shows his miserly nature
-- **"Hard and sharp as flint"** - Simile emphasising his cold, unyielding character
-- **"solitary as an oyster"** - Suggests isolation and self-containment
-- **"The cold within him froze his old features"** - Internal coldness reflected externally
-
-### Techniques to Discuss
-- **Semantic field of coldness** - Dickens repeatedly associates Scrooge with cold imagery
-- **Listing/accumulation** - The opening description piles up negative traits
-- **Pathetic fallacy** - Weather reflects his inner state
-
-### Paragraph Structure (PEEL)
-- **P**oint: What aspect of Scrooge are you focusing on?
-- **E**vidence: Which quotation supports this?
-- **E**xplain: How does the language create this impression?
-- **L**ink: How does this connect to transformation/the question?
-      `,
-      writingPrompt: "Write a paragraph analysing how Dickens presents Scrooge at the beginning of the novella. Use at least one quotation and analyse the language techniques Dickens uses.",
-      keyPoints: [
-        "Clear topic sentence about initial characterisation",
-        "Includes relevant quotation(s)",
-        "Analyses language techniques (not just identifies)",
-        "Explains effect on reader",
-        "Links back to transformation/question"
-      ],
-      exampleQuotes: [
-        "Hard and sharp as flint",
-        "solitary as an oyster",
-        "The cold within him froze his old features"
-      ],
-      points: 15
-    },
-    
-    // ==========================================
-    // BODY PARAGRAPH 2
-    // ==========================================
-    {
-      id: 3,
-      title: "Ghost of Christmas Past",
-      type: "body",
-      learningMaterial: `
-## The Ghost of Christmas Past - Beginning of Change
-
-The Ghost of Christmas Past shows Scrooge memories from his youth and early adulthood. This is the first stage of his transformation.
-
-### Key Moments
-- Scrooge sees himself as a **lonely schoolboy** - abandoned at Christmas
-- He remembers his **sister Fan** with genuine emotion
-- He witnesses his **younger self with Belle** and their broken engagement
-- Belle tells young Scrooge: **"Another idol has displaced me... a golden one"**
-
-### Key Quotations
-- **"A solitary child, neglected by his friends"** - Explains origins of his isolation
-- **"His face had not the harsh and rigid lines of later years"** - Shows he wasn't always cold
-- **"Spirit! Remove me from this place"** - Scrooge is emotionally affected
-
-### What to Analyse
-- How does revisiting the past begin Scrooge's emotional awakening?
-- What do we learn about WHY Scrooge became the way he is?
-- How does Dickens show Scrooge's emotional reaction?
-      `,
-      writingPrompt: "Write a paragraph analysing how the Ghost of Christmas Past begins Scrooge's transformation. Focus on how revisiting his memories affects him emotionally and what we learn about the origins of his character.",
-      keyPoints: [
-        "Focuses on the role of memory/the past",
-        "Includes relevant quotation(s)",
-        "Shows understanding of cause and effect",
-        "Analyses Scrooge's emotional response",
-        "Connects to overall transformation arc"
-      ],
-      exampleQuotes: [
-        "A solitary child, neglected by his friends",
-        "Spirit! Remove me from this place",
-        "Another idol has displaced me"
-      ],
-      points: 15
-    },
-    
-    // ==========================================
-    // BODY PARAGRAPH 3
-    // ==========================================
     {
       id: 4,
-      title: "Ghost of Christmas Present",
+      title: "The Role of Interaction and Child-Directed Speech",
       type: "body",
-      learningMaterial: `
-## The Ghost of Christmas Present - Seeing Others
+      learningMaterial: `## Interaction and CDS Analysis
 
-This spirit shows Scrooge how others live and celebrate Christmas in the present day, including the Cratchit family.
+Examine how the mother's speech supports Mark's language development.
 
-### Key Moments
-- The **Cratchit family dinner** - joy despite poverty
-- **Tiny Tim** - "God bless us, every one!"
-- The spirit reveals **Ignorance and Want** - children representing society's problems
-- Scrooge asks **"Are there no prisons? Are there no workhouses?"** thrown back at him
+### Child-Directed Speech (CDS) Features:
 
-### Key Quotations
-- **"Spirit, tell me if Tiny Tim will live"** - Shows growing empathy
-- **"They are Man's... This boy is Ignorance. This girl is Want"** - Social message
-- Bob Cratchit toasts Scrooge as **"the Founder of the Feast"** despite everything
+**1. Mother's Language Modifications**
+- Recasting: Mother doesn't explicitly correct but models correct forms
+- "Daddy did?" - offering the correct form implicitly
+- Uses questions to prompt further speech: "Who broke the coach?", "How?"
 
-### What to Analyse
-- How does seeing the Cratchits change Scrooge?
-- What is the significance of Tiny Tim to Scrooge's transformation?
-- How does Dickens use this spirit to deliver social commentary?
-      `,
-      writingPrompt: "Write a paragraph analysing how the Ghost of Christmas Present furthers Scrooge's transformation. Focus on his growing empathy, particularly in relation to the Cratchit family and Tiny Tim.",
+**2. Scaffolding (Bruner)**
+- Mother provides a framework for conversation
+- Uses the IRF pattern (Initiation-Response-Feedback)
+- Supports Mark's meaning-making rather than criticising errors
+
+**3. Turn-Taking and Conversation**
+- The exchange shows clear turn-taking structure
+- Mark is learning conversational norms
+- Adjacency pairs: question-answer sequences
+
+### Theoretical Perspectives on Interaction:
+
+**Vygotsky's Zone of Proximal Development (ZPD)**
+- Mother operates within Mark's ZPD
+- Language slightly above Mark's current level but comprehensible
+- Social interaction crucial for development
+
+**Bruner's LASS (Language Acquisition Support System)**
+- Complements Chomsky's LAD
+- Caregivers provide scaffolding
+- Routines and rituals support learning
+
+**Behaviourist Elements (Skinner)**
+- Some evidence of reinforcement: "All right" in response to requests
+- However, overgeneralisation ("taked") challenges pure imitation theory`,
+      writingPrompt: "Analyse the mother's role in supporting Mark's language development, examining features of Child-Directed Speech and the importance of interaction in language acquisition.",
       keyPoints: [
-        "Discusses the present and its impact on Scrooge",
-        "Includes quotation with analysis",
-        "Shows understanding of empathy development",
-        "May reference social commentary",
-        "Connects to transformation journey"
+        "Identifies CDS features in the mother's speech",
+        "Discusses scaffolding and recasting with examples",
+        "References Bruner's LASS and Vygotsky's ZPD",
+        "Evaluates the role of interaction vs innate ability"
       ],
       exampleQuotes: [
-        "Spirit, tell me if Tiny Tim will live",
-        "God bless us, every one!",
-        "This boy is Ignorance. This girl is Want"
+        "Who broke the coach?",
+        "How did you break it?",
+        "Daddy did?",
+        "I can't, darling."
       ],
-      points: 15
+      points: 12
     },
-    
-    // ==========================================
-    // BODY PARAGRAPH 4
-    // ==========================================
     {
       id: 5,
-      title: "Ghost of Christmas Yet to Come",
+      title: "Theoretical Perspectives: Nature vs Nurture",
       type: "body",
-      learningMaterial: `
-## The Ghost of Christmas Yet to Come - The Final Warning
+      learningMaterial: `## Theoretical Framework
 
-This silent, terrifying spirit shows Scrooge a possible future - his own death, unmourned and forgotten.
+This paragraph should demonstrate your understanding of competing theories of language acquisition.
 
-### Key Moments
-- People **laugh and celebrate** an unnamed man's death
-- His possessions are **stolen and sold** by thieves
-- His **grave** - neglected and alone
-- Tiny Tim has **died** in this future
-- Scrooge pleads: **"I will honour Christmas in my heart"**
+### Nativist Theory (Chomsky)
+**Evidence from the extract:**
+- "Daddy taked it" - overgeneralisation proves children aren't simply imitating
+- Mark applies grammatical rules he's never been taught
+- Supports the existence of a **Language Acquisition Device (LAD)**
+- **Universal Grammar**: innate knowledge of grammatical structure
 
-### Key Quotations
-- **"The phantom slowly, gravely, silently approached"** - Creates fear
-- **"Before I draw nearer to that stone... answer me one question. Are these the shadows of the things that Will be, or are they shadows of things that May be, only?"** - Hope for change
-- **"I will not shut out the lessons that they teach!"** - Commitment to transformation
+**Supporting Research:**
+- Berko Gleason's "Wug Test" (1958): children apply morphological rules to novel words
+- Children worldwide follow similar acquisition patterns
 
-### What to Analyse
-- How does fear function as a catalyst for change?
-- Why is this spirit the most effective?
-- How does Dickens create tension and horror?
-      `,
-      writingPrompt: "Write a paragraph analysing how the Ghost of Christmas Yet to Come completes Scrooge's transformation. Consider how Dickens uses fear and the possibility of change to drive Scrooge's moral awakening.",
+### Behaviourist Theory (Skinner)
+**Evidence from the extract:**
+- Mark uses "please" - learned through reinforcement
+- Imitation plays some role in vocabulary acquisition
+- Mother's responses reinforce communication attempts
+
+**Limitations:**
+- Cannot explain overgeneralisation
+- Children produce novel utterances never heard before
+- Chomsky's critique of "Verbal Behaviour" (1959)
+
+### Cognitive Theory (Piaget)
+- Language development linked to cognitive development
+- Object permanence must be achieved before certain language features
+- Mark shows means-end reasoning: broken toy → solution (Daddy mends)
+
+### Interactionist Theory (Vygotsky/Bruner)
+- Combines nature and nurture
+- Social interaction essential
+- LASS works alongside LAD
+- Evidence: turn-taking, scaffolding in the extract
+
+### Case Studies:
+- **Genie**: highlighted critical period for language acquisition
+- **Jim** (Bard and Sachs): showed interaction is necessary even when exposed to language via TV`,
+      writingPrompt: "Evaluate the competing theoretical perspectives on language acquisition, using evidence from the extract and wider research to support your analysis.",
       keyPoints: [
-        "Discusses the future/consequences",
-        "Analyses how fear motivates change",
-        "Includes relevant quotation with analysis",
-        "Shows understanding of the transformation's climax",
-        "May discuss Dickens' technique (silence, imagery)"
+        "Explains Nativist theory with evidence from the extract (overgeneralisation)",
+        "Acknowledges Behaviourist contributions and limitations",
+        "Discusses Cognitive and Interactionist perspectives",
+        "References relevant research and case studies",
+        "Evaluates which theories are most persuasive"
       ],
       exampleQuotes: [
-        "Are these the shadows of things that Will be, or... May be?",
-        "I will honour Christmas in my heart",
-        "I will not shut out the lessons that they teach"
+        "Daddy taked it to work",
+        "Helen play, please?"
       ],
-      points: 15
+      points: 12
     },
-    
-    // ==========================================
-    // BODY PARAGRAPH 5
-    // ==========================================
     {
       id: 6,
-      title: "The Transformed Scrooge",
-      type: "body",
-      learningMaterial: `
-## Scrooge's Redemption - Stave Five
-
-The final stave shows us the transformed Scrooge on Christmas morning and beyond.
-
-### Key Moments
-- Scrooge wakes **joyful and laughing** - complete contrast to Stave One
-- He **sends a turkey** to the Cratchits anonymously
-- He **gives money to charity** collectors
-- He **joins Fred's Christmas dinner**
-- He **raises Bob's salary** and helps Tiny Tim
-
-### Key Quotations
-- **"I am as light as a feather, I am as happy as an angel, I am as merry as a schoolboy"** - Listing shows overwhelming joy
-- **"He became as good a friend, as good a master, and as good a man, as the good old city knew"** - Transformed reputation
-- **"Scrooge was better than his word"** - Actions prove change is genuine
-
-### What to Analyse
-- How does Dickens show the completeness of transformation?
-- How do language and structure in Stave Five contrast with Stave One?
-- Why does Dickens emphasise that the change is lasting?
-      `,
-      writingPrompt: "Write a paragraph analysing how Dickens presents the transformed Scrooge in Stave Five. Consider how language, imagery, and Scrooge's actions demonstrate the completeness of his redemption.",
-      keyPoints: [
-        "Contrasts with opening characterisation",
-        "Includes quotation showing transformation",
-        "Analyses language techniques (listing, contrast)",
-        "Discusses lasting nature of change",
-        "May reference Dickens' message/purpose"
-      ],
-      exampleQuotes: [
-        "I am as light as a feather, I am as happy as an angel",
-        "as good a friend, as good a master, and as good a man",
-        "Scrooge was better than his word"
-      ],
-      points: 15
-    },
-    
-    // ==========================================
-    // CONCLUSION
-    // ==========================================
-    {
-      id: 7,
-      title: "Conclusion",
+      title: "Conclusion: Evaluating the Acquisition Process",
       type: "conclusion",
-      learningMaterial: `
-## Writing Your Conclusion
+      learningMaterial: `## Conclusion Guidance
 
-Your conclusion should:
-- **Summarise your argument** - bring together your main points
-- **Answer the question directly** - how DOES Dickens present the transformation?
-- **Offer a final insight** - why does this matter? What is Dickens' message?
-- **End memorably** - a strong final sentence
+Your conclusion should synthesise your analysis and offer a balanced evaluation.
 
-### Things to Mention
-- The **journey structure** - Past, Present, Future as a moral journey
-- **Dickens' techniques** - contrast, imagery, characterisation
-- **Dickens' purpose** - social commentary, moral message, hope for change
-- **Relevance** - why this message still resonates today
+### What to Include:
 
-### What NOT to Do
-- Don't introduce new evidence or quotations
-- Don't just repeat your introduction
-- Don't end with "In conclusion..." (find a more sophisticated way)
-      `,
-      writingPrompt: "Write your conclusion. Summarise how Dickens presents Scrooge's transformation, highlight the key techniques he uses, and explain the significance of this transformation for Dickens' message.",
+**1. Summary of Key Points**
+- Mark demonstrates typical features of the 18 months to 4 years period
+- Evidence of telegraphic speech, overgeneralisation, developing pragmatics
+- Mother's CDS supports but doesn't fully explain acquisition
+
+**2. Theoretical Evaluation**
+- No single theory fully explains language acquisition
+- Nativist theory explains overgeneralisation but undervalues interaction
+- Interactionist approach offers most balanced perspective
+- Nature AND nurture both play crucial roles
+
+**3. Wider Implications**
+- Individual variation in acquisition rates
+- Importance of rich linguistic environment
+- The remarkable speed and uniformity of acquisition across cultures
+
+**4. Final Reflection**
+- The extract illustrates the complexity of acquisition
+- Mark's errors are actually evidence of sophisticated rule-learning
+- Language acquisition remains one of the most impressive human achievements
+
+### Strong Conclusion Techniques:
+- Return to the extract with fresh insight
+- Avoid simply repeating earlier points
+- End with a perceptive observation about language acquisition
+- Maintain academic register throughout`,
+      writingPrompt: "Conclude your essay by synthesising your analysis, evaluating the relative contributions of different factors in language acquisition, and offering a final assessment of how children acquire language in this crucial period.",
       keyPoints: [
-        "Summarises main argument coherently",
-        "Directly addresses the question",
-        "References key techniques/methods",
-        "Shows understanding of Dickens' purpose",
-        "Ends with strong final statement"
+        "Synthesises key analytical points from the essay",
+        "Evaluates theoretical perspectives with a balanced judgement",
+        "Returns to the extract with enhanced understanding",
+        "Offers perceptive concluding observations",
+        "Maintains coherent academic expression throughout"
       ],
-      points: 15
+      exampleQuotes: [],
+      points: 6
     }
   ],
   
-  // ============================================
-  // GRADING CRITERIA
-  // ============================================
-  // These are used by the AI when providing feedback
-  // Adjust the weightings to match your assessment criteria
   gradingCriteria: {
-    content: {
-      weight: 30,
-      description: "Understanding of text, relevant evidence, addressing the question"
+    ao1: { 
+      weight: 33, 
+      description: "AO1: Apply appropriate methods of language analysis, using associated terminology and coherent written expression (20 marks)" 
     },
-    analysis: {
-      weight: 30,
-      description: "Analysis of language, structure, and techniques; explanation of effects"
+    ao2: { 
+      weight: 33, 
+      description: "AO2: Demonstrate critical understanding of concepts and issues relevant to language use (20 marks)" 
     },
-    structure: {
-      weight: 20,
-      description: "Clear paragraph structure, logical flow, cohesive argument"
-    },
-    expression: {
-      weight: 20,
-      description: "Academic vocabulary, spelling, punctuation, grammar"
+    ao3: { 
+      weight: 34, 
+      description: "AO3: Analyse and evaluate how contextual factors and language features are associated with the construction of meaning (20 marks)" 
     }
-  }
+  },
+
+  bandDescriptors: {
+    band5: {
+      marks: "17-20 per AO (51-60 total)",
+      ao1: "Sophisticated methods of analysis; confident use of a wide range of terminology; perceptive discussion of topic; coherent, academic style",
+      ao2: "Detailed critical understanding of concepts; perceptive discussion of issues; confident and concise selection of supporting examples",
+      ao3: "Confident analysis and evaluation of a range of contextual factors; productive discussion of the construction of meaning; perceptive evaluation of effectiveness of communication"
+    },
+    band4: {
+      marks: "13-16 per AO (39-48 total)",
+      ao1: "Effective methods of analysis; secure use of a range of terminology; thorough discussion of topic; expression generally accurate and clear",
+      ao2: "Secure understanding of concepts; some intelligent discussion of issues; consistent selection of apt supporting examples",
+      ao3: "Effective analysis and evaluation of contextual factors; some insightful discussion of the construction of meaning; purposeful evaluation of effectiveness of communication"
+    },
+    band3: {
+      marks: "9-12 per AO (27-36 total)",
+      ao1: "Sensible methods of analysis; generally sound use of terminology; competent discussion of topic; mostly accurate expression with some lapses",
+      ao2: "Sound understanding of concepts; sensible discussion of issues; generally appropriate selection of supporting examples",
+      ao3: "Sensible analysis and evaluation of contextual factors; generally clear discussion of the construction of meaning; relevant evaluation of effectiveness of communication"
+    },
+    band2: {
+      marks: "5-8 per AO (15-24 total)",
+      ao1: "Basic methods of analysis; using some terminology with some accuracy; uneven discussion of topic; straightforward expression, with technical inaccuracy",
+      ao2: "Some understanding of concepts; basic discussion of issues; some points supported by examples",
+      ao3: "Some basic analysis of contextual factors; undeveloped discussion of meaning construction; inconsistent evaluation"
+    },
+    band1: {
+      marks: "1-4 per AO (3-12 total)",
+      ao1: "Limited methods of analysis; some grasp of basic terminology; undeveloped discussion of topic; errors in expression and lapses in clarity",
+      ao2: "A few simple points made about concepts; limited discussion of issues; little use of supporting examples",
+      ao3: "Some basic awareness of context; little sense of how meaning is constructed; limited evaluation"
+    }
+  },
+
+  keyTerminology: [
+    "Language Acquisition Device (LAD)",
+    "Child-Directed Speech (CDS)",
+    "telegraphic speech",
+    "overgeneralisation/virtuous error",
+    "holophrastic stage",
+    "two-word stage",
+    "post-telegraphic stage",
+    "scaffolding",
+    "Zone of Proximal Development (ZPD)",
+    "LASS (Language Acquisition Support System)",
+    "morpheme",
+    "inflection",
+    "recasting",
+    "expansion",
+    "Universal Grammar",
+    "critical period hypothesis"
+  ],
+
+  theoristsAndResearch: [
+    { name: "Chomsky", theory: "Nativist theory, LAD, Universal Grammar" },
+    { name: "Skinner", theory: "Behaviourist theory, operant conditioning" },
+    { name: "Piaget", theory: "Cognitive theory, stages of development" },
+    { name: "Vygotsky", theory: "Zone of Proximal Development, social interaction" },
+    { name: "Bruner", theory: "LASS, scaffolding, interactionist approach" },
+    { name: "Roger Brown", theory: "Order of morpheme acquisition" },
+    { name: "Berko Gleason", theory: "Wug Test - morphological rules" },
+    { name: "Bellugi", theory: "Pronoun and negation acquisition" },
+    { name: "Aitchison", theory: "Labelling, packaging, network-building" },
+    { name: "Katherine Nelson", theory: "Categories of first words" }
+  ]
 };
