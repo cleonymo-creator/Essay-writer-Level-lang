@@ -8,36 +8,42 @@ window.ESSAY_CONFIG = {
   yearGroup: "Year 13",
   essayTitle: "Using this extract as a starting point, analyse and evaluate some of the ways in which children acquire language between eighteen months and four years of age.",
   
-  instructions: `Read the following data carefully, then write an extended analytical response.
+  instructions: `<p>Read the following data carefully, then write an extended analytical response.</p>
 
-**The Extract:**
+<h4>The Extract:</h4>
 
-Mark: Play. Play. Play, Mummy. Mummy, come on.
-Mother: All right.
-Mark: Helen play, please? (pause) Helen still gone sleep, Mummy?
-Mother: No. Your sister's up there talking, isn't she?
-Mark: Yes. (playing with his toys) Top of the coach. Broken.
-Mother: Who broke the coach?
-Mark: Mark did.
-Mother: How?
-Mark: Out. 
-Mother: How did you break it?
-Mark: Dunno (pause) Mummy mend it.
-Mother: I can't, darling. Look the wheels have gone as well.
-Mark: Oh I want Daddy taked it to work (pause) mend it.
-Mother: Daddy did?
-Mark: Daddy take it away, take it to work. Mend it.
+<div style="background-color: #f5f5f5; padding: 15px; border-left: 4px solid #4a90d9; margin: 15px 0; font-family: monospace;">
+<p><strong>Mark:</strong> Play. Play. Play, Mummy. Mummy, come on.</p>
+<p><strong>Mother:</strong> All right.</p>
+<p><strong>Mark:</strong> Helen play, please? (pause) Helen still gone sleep, Mummy?</p>
+<p><strong>Mother:</strong> No. Your sister's up there talking, isn't she?</p>
+<p><strong>Mark:</strong> Yes. (playing with his toys) Top of the coach. Broken.</p>
+<p><strong>Mother:</strong> Who broke the coach?</p>
+<p><strong>Mark:</strong> Mark did.</p>
+<p><strong>Mother:</strong> How?</p>
+<p><strong>Mark:</strong> Out.</p>
+<p><strong>Mother:</strong> How did you break it?</p>
+<p><strong>Mark:</strong> Dunno (pause) Mummy mend it.</p>
+<p><strong>Mother:</strong> I can't, darling. Look the wheels have gone as well.</p>
+<p><strong>Mark:</strong> Oh I want Daddy taked it to work (pause) mend it.</p>
+<p><strong>Mother:</strong> Daddy did?</p>
+<p><strong>Mark:</strong> Daddy take it away, take it to work. Mend it.</p>
+</div>
 
-**In your response, you must:**
-• Apply appropriate methods of language analysis, using associated terminology and coherent expression
-• Demonstrate understanding of relevant language concepts and issues
-• Consider contextual factors and language features associated with the construction of meaning
-• Provide supporting examples
+<h4>In your response, you must:</h4>
+<ul>
+<li>Apply appropriate methods of language analysis, using associated terminology and coherent expression</li>
+<li>Demonstrate understanding of relevant language concepts and issues</li>
+<li>Consider contextual factors and language features associated with the construction of meaning</li>
+<li>Provide supporting examples</li>
+</ul>
 
-**Assessment Objectives:**
-• AO1: Apply appropriate methods of language analysis (20 marks)
-• AO2: Demonstrate critical understanding of concepts and issues (20 marks)
-• AO3: Analyse and evaluate contextual factors and meaning construction (20 marks)`,
+<h4>Assessment Objectives:</h4>
+<ul>
+<li><strong>AO1:</strong> Apply appropriate methods of language analysis (20 marks)</li>
+<li><strong>AO2:</strong> Demonstrate critical understanding of concepts and issues (20 marks)</li>
+<li><strong>AO3:</strong> Analyse and evaluate contextual factors and meaning construction (20 marks)</li>
+</ul>`,
 
   maxAttempts: 3,
   minWordsPerParagraph: 80,
